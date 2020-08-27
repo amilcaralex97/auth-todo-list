@@ -13,7 +13,7 @@ router.post("/register", validInfo, async (req, res) => {
 
   try {
     const user = await pool.query("SELECT * FROM users WHERE user_email = $1", [
-      email
+      email,
     ]);
 
     if (user.rows.length > 0) {
@@ -39,10 +39,9 @@ router.post("/register", validInfo, async (req, res) => {
 
 router.post("/login", validInfo, async (req, res) => {
   const { email, password } = req.body;
-
   try {
     const user = await pool.query("SELECT * FROM users WHERE user_email = $1", [
-      email
+      email,
     ]);
 
     if (user.rows.length === 0) {
