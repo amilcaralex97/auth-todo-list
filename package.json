@@ -13,7 +13,7 @@
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
-  "author": "hola",
+  "author": "amilcar",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^4.0.0",
