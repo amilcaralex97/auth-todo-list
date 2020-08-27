@@ -51,6 +51,7 @@ const Login = ({ setAuth }) => {
           value={email}
           onChange={(e) => onChange(e)}
           className="form-control my-3"
+          placeholder="email"
         />
         <input
           type="password"
@@ -58,10 +59,16 @@ const Login = ({ setAuth }) => {
           value={password}
           onChange={(e) => onChange(e)}
           className="form-control my-3"
+          placeholder="password"
         />
         <button className="btn btn-success btn-block">Submit</button>
       </form>
-      <Link to="/register">register</Link>
+      <Link
+        className="btn btn-success btn-block btn-primary my-2"
+        to="/register"
+      >
+        register
+      </Link>
     </Fragment>
   );
 };
