@@ -10,7 +10,8 @@ const devConfig = {
 };
 
 const proConfig = {
-  connectionString: process.env.DATABASE_URL, //HEROKU ADDONS
+	connectionString: process.env.DATABASE_URL, //HEROKU ADDONS,
+	ssl: true,
 };
 
 const pool = new Pool(
